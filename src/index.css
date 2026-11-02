@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  :focus-visible { outline: 2px solid #000; outline-offset: 2px; }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+}
+@layer components {
+  .btn { @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-bold transition duration-300 active:scale-95 disabled:cursor-not-allowed disabled:opacity-50; }
+  .btn-dark { @apply btn bg-black text-white hover:bg-neutral-700; }
+  .btn-light { @apply btn border border-neutral-300 bg-white text-black hover:border-black; }
+  .input { @apply w-full rounded-xl border border-neutral-300 bg-white px-4 py-3 text-sm outline-none transition focus:border-black; }
+  .chip { @apply rounded-full border border-neutral-300 px-4 py-2 text-sm transition hover:border-black; }
+  .chip-on { @apply border-black bg-black text-white; }
+}
