@@ -18,3 +18,4 @@ Roles can't be changed from the browser, so nobody can promote themselves.
 
 ## Not included
 Online payment. Checkout creates a "pending" order on the server (`place_order` function, prices and stock checked in the database). Card payments need a secret key, so add Stripe through a Supabase Edge Function.
+Website deployment update
