@@ -23,7 +23,7 @@ export default function Navbar() {
     <header className="sticky top-0 z-40 border-b border-neutral-200 bg-white/90 backdrop-blur">
       <div className="mx-auto flex h-16 max-w-7xl items-center gap-6 px-4 sm:px-6">
         <button className="md:hidden" aria-label="Menu" onClick={() => setOpen(!open)}>{open ? <X /> : <Menu />}</button>
-        <Link to="/" className="text-2xl font-black tracking-tighter" style={{ fontStretch: '125%' }}>STRIDE</Link>
+        <Link to="/" className="text-lg font-black tracking-tight whitespace-nowrap">PRITAM BRANDY SHOES</Link>
         <nav className="hidden gap-6 text-sm font-semibold md:flex">
           {links.map(([t, to]) => <NavLink key={t} to={to} className="transition hover:text-neutral-500">{t}</NavLink>)}
         </nav>
