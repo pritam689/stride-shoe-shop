@@ -1,21 +1,46 @@
-# STRIDE — Shoe store (React + Tailwind + Supabase)
+# STRIDE — Online Shoe Store
 
-## Setup
-1. Create a project at supabase.com.
-2. Open **SQL Editor**, paste all of `supabase/schema.sql`, and run it (tables, RLS policies, storage bucket, sample shoes).
-3. Copy `.env.example` to `.env` and fill in the project URL and **anon** key (Project Settings > API).
-4. `npm install` then `npm run dev`.
+A modern online shoe shopping website built with React, Tailwind CSS, and Supabase.
 
-## Make yourself admin
-Register in the app, then run in the SQL Editor:
-`update public.profiles set role = 'admin' where email = 'you@example.com';`
-Roles can't be changed from the browser, so nobody can promote themselves.
+🌐 **Live Website:** https://stride-shoe-shop.vercel.app
 
-## Optional
-- **Google login**: Authentication > Providers > Google (add your Google OAuth client ID/secret there, not in the app). Add `http://localhost:5173` and your live URL under Authentication > URL Configuration.
-- **Email confirmation**: Authentication > Providers > Email. Turn "Confirm email" off for quick local testing.
-- **Hosting**: any static host; add a rewrite of all paths to `index.html` (single-page app).
+## About the Project
 
-## Not included
-Online payment. Checkout creates a "pending" order on the server (`place_order` function, prices and stock checked in the database). Card payments need a secret key, so add Stripe through a Supabase Edge Function.
+STRIDE is a full-stack e-commerce shoe store designed to provide a smooth online shopping experience. Users can browse shoes, view products, and place orders.
+
+## Features
+
+- Modern and responsive user interface
+- Shoe product catalogue
+- User registration and login
+- Supabase database integration
+- Shopping cart and order management
+- Admin role support
+- Secure database access using Supabase Row Level Security
+
+## Technologies Used
+
+- React
+- JavaScript
+- Tailwind CSS
+- Supabase
+- Vite
+- Vercel
+
+## Getting Started
+
+1. Clone this repository.
+2. Run `npm install`.
+3. Configure your Supabase credentials using `.env.example`.
+4. Run `npm run dev`.
+
+## Deployment
+
+The project is deployed on Vercel.
+
+**Live Demo:** https://stride-shoe-shop.vercel.app
+
+---
+
+Created as a portfolio project to demonstrate frontend and full-stack web development skills.
 Website deployment update
